@@ -9,9 +9,16 @@ Alias de `Rodrigo Manguinho`.
 	c = !git add --all && git commit -m 
 	l = !git log --pretty=format:'%C(blue)%h %C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
 ```
-## Configurando o linter
+## Configurando um linter
 
-
+1. Instala o commitlint (linter agnóstico de commits)
+```shell
+npm i -D @commitlint/cli@19.3.0
+```
+2. Instala o módulo conventional commits para o commitlint:
+```shell
+npm i -D @commitlint/config-conventional@19.2.2
+```
 ---
 ## Commits
 __Princípios:__
@@ -21,6 +28,17 @@ __Princípios:__
 - ✅ Tempo verbal no `imperativo` no presente! Ex: "ajusta o bug"; "adiciona tal coisa"; O que esse commite faz com o projeto quando eu fizer o merge??
 - 
 
+### Tipos:
+
+- build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+- ci: Changes to our CI configuration files and scripts (example - scopes: Travis, Circle, BrowserStack, SauceLabs)
+- docs: Documentation only changes
+- feat: A new feature
+- fix: A bug fix
+- perf: A code change that improves performance
+- refactor: A code change that neither fixes a bug nor adds a feature
+- style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- test: Adding missing tests or correcting existing tests
 
 ## Padrões de emojis 💈
 [Emojis Github](https://gist.github.com/rxaviers/7360908?permalink_comment_id=5056224)
