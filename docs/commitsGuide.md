@@ -19,6 +19,10 @@ npm i -D @commitlint/cli@19.3.0
 ```shell
 npm i -D @commitlint/config-conventional@19.2.2
 ```
+3. Instalar o husky
+```shell
+npm i -D husky
+``` 
 ---
 ## Commits
 __Princípios:__

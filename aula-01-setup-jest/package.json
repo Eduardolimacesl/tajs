@@ -16,6 +16,7 @@
     "node": "v18.17.0"
   },
   "devDependencies": {
+    "husky": "^9.1.4",
     "jest": "^29.7.0"
   }
 }
