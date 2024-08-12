@@ -1,6 +1,7 @@
 # Commit Guide
 
-## 1. Configurando [alias] em `~/.gitconfig`
+## Configurando [alias] em `~/.gitconfig`
+Alias de `Rodrigo Manguinho`.
 ```
 [alias]
 	unstage = reset HEAD --
@@ -8,18 +9,29 @@
 	c = !git add --all && git commit -m 
 	l = !git log --pretty=format:'%C(blue)%h %C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
 ```
+## Configurando o linter
+
+
 ---
-## 2. Padrões de emojis 💈
+## Commits
+__Princípios:__
+
+- ✅ Separe cada mudança lógica em um commit separado;
+- ✅ Cada commit precisa ser justificável por seus próprios méritos - escopos isolados e vínculos com outros commits;
+- ✅ Tempo verbal no `imperativo` no presente! Ex: "ajusta o bug"; "adiciona tal coisa"; O que esse commite faz com o projeto quando eu fizer o merge??
+- 
+
+
+## Padrões de emojis 💈
+[Emojis Github](https://gist.github.com/rxaviers/7360908?permalink_comment_id=5056224)
 
 | Tipo do commit | Emoji | Palavra-chave |
 | --- | --- | --- |
-| Acessibilidade | ♿ `:wheelchair:` |     |
 | Adicionando um teste | ✅ `:white_check_mark:` | `test` |
 | Atualizando a versão de um submódulo | ⬆️ `:arrow_up:` |     |
 | Retrocedendo a versão de um submódulo | ⬇️ `:arrow_down:` |     |
 | Adicionando uma dependência | ➕ `:heavy_plus_sign:` | `build` |
 | Alterações de revisão de código | 👌 `:ok_hand:` | `style` |
-| Animações e transições | 💫 `:dizzy:` |     |
 | Bugfix | 🐛 `:bug:` | `fix` |
 | Comentários | 💡 `:bulb:` | `docs` |
 | Commit inicial | 🎉 `:tada:` | `init` |
@@ -38,7 +50,6 @@
 | Limpeza de Código | 🧹 `:broom:` | `cleanup` |
 | Removendo um arquivo | 🗑️ `:wastebasket:` | `remove` |
 | Removendo uma dependência | ➖ `:heavy_minus_sign:` | `build` |
-| Responsividade | 📱 `:iphone:` |     |
 | Revertendo mudanças | 💥 `:boom:` | `fix` |
 | Segurança | 🔒️ `:lock:` |     |
 | SEO | 🔍️ `:mag:` |     |
@@ -50,11 +61,14 @@
 | Tratamento de erros | 🥅 `:goal_net:` |     |
 | Dados | 🗃️ `:card_file_box:` | `raw` |
 
-## 3. 💻 Exemplos
+## 💻 Exemplos
+Padrão de commits [ConventionalCommits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+`:<emoji>: <type> (escopo opcional): <descrição>`
 
 | Comando Git | Resultado no GitHub |
 | --- | --- |
-| `git commit -m ":tada: Commit inicial"` | 🎉 Commit inicial |
+| `git commit -m ":tada: chore: Commit inicial"` | 🎉 chore: Commit inicial |
 | `git commit -m ":books: docs: Atualização do README"` | 📚 docs: Atualização do README |
 | `git commit -m ":bug: fix: Loop infinito na linha 50"` | 🐛 fix: Loop infinito na linha 50 |
 | `git commit -m ":sparkles: feat: Página de login"` | ✨ feat: Página de login |

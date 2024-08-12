@@ -40,8 +40,8 @@ npm pkg set type=module engines.node=$(node -v) author=eduardolimacesl
 npm i -D jest@29
 npx jest --init
 ```
-3. Instalando o nlt
+3. Instalando o ntl
 ```shell
 npm i -g ntl
 ```
-4. 
+## Conceitos
