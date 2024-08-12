@@ -23,6 +23,10 @@ npm i -D @commitlint/config-conventional@19.2.2
 ```shell
 npm i -D husky
 ``` 
+4. Instalar o commitzen
+```shell
+npm i -D commitizen@4.3.0
+```
 ---
 ## Commits
 __Princípios:__
