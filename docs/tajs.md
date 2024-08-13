@@ -45,3 +45,9 @@ npx jest --init
 npm i -g ntl
 ```
 ## Conceitos
+### Mocs
+Imitação ou simulado (Moc exames) - Fixar o resultado esperado de um serviço ou de uma parte do código para simular uma iteração, para validar como o código que está sendo testado se comportará. Isolar uma função que está sendo testada substituindo qualquer interação externa para simular seu comportamento.
+
+
+### 
+
